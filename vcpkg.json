@@ -1,0 +1,23 @@
+{
+  "name": "paroli",
+  "version-string": "0.1.0-windows",
+  "description": "Streaming Piper TTS (paroli) ported to Windows",
+  "dependencies": [
+    "fmt",
+    "spdlog",
+    "nlohmann-json",
+    "xtensor"
+  ],
+  "features": {
+    "server": {
+      "description": "paroli-server (Drogon HTTP/WebSocket API, Ogg/Opus output)",
+      "dependencies": [
+        "drogon",
+        "opus",
+        "libogg",
+        "libopusenc",
+        "soxr"
+      ]
+    }
+  }
+}
